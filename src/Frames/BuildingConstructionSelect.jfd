@@ -1,0 +1,107 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$locationPolicy": 1
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 116, 197, 116, 255 )
+			"undecorated": true
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "buildingSelectionCombobox"
+				"background": new java.awt.Color( 0, 153, 0, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 40
+				"width": 190
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "selectionLabel"
+				"text": "Select Building : "
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buildButton"
+				"text": "Build"
+				"background": new java.awt.Color( 0, 127, 14, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"focusPainted": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 80
+				"width": 90
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Name :  Main"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "buildingNameLabel"
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 225
+				"y": 40
+				"width": 335
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Description : Your Main Building"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "buidinDesLabel"
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 340
+				"height": 16
+				"x": 225
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Hadi-PC\\Desktop\\Advanced Programming - JAVA\\projects\\JavaStratGame\\src\\Resources\\buildings\\mainBuilding2.png" )
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "buildingImageLabel"
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 130
+				"width": 140
+				"height": 135
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 83, 211, 83, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					"background": new java.awt.Color( 0, 127, 14, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"focusPainted": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 90
+					"height": 26
+					"x": 120
+					"y": 110
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": -30
+				"width": 620
+				"height": 330
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 200, 40 )
+			"size": new java.awt.Dimension( 620, 300 )
+		} )
+	}
+}
